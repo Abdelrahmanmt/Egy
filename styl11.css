@@ -1,0 +1,109 @@
+/* General styling */
+body {
+    background-color: #111;
+    color: #e5c100;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+header h1 {
+    color: #e5c100;
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Main container styling */
+#overlayContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center both text and model */
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Text overlay styling */
+#textOverlay {
+    width: 45%; /* Adjust width as needed */
+}
+
+#textOverlay h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffd700; /* Gold color for headers */
+}
+
+#textOverlay p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* 3D model container styling */
+#container3D {
+    width: 50%; /* Adjust the width as needed */
+    height: 500px; /* Fixed height for the 3D model container */
+    margin-left: 20px; /* Add margin to create space from the text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #overlayContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #textOverlay, #container3D {
+        width: 100%;
+        margin: 0;
+    }
+
+    #container3D {
+        height: 400px;
+    }
+}
+nav {
+    position: relative;
+    display: flex;
+}
+
+nav a {
+    color: #FFD700; /* Updated gold color */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem; 
+    
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px 16px;
+    color: #FFD700; /* Updated gold color */
+}
+
+.dropdown a:hover {
+    background-color: #222;
+}
