@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egyptian Civilization Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Egyptian Civilization Explorer</h1>
+    <nav>
+        
+        <div>
+            <a href="#">Key Sites</a>
+            <div class="dropdown">
+                <a href="index.html">The Pyramids</a>
+                <a href="hatshepsut.html">Temple of Hatshepsut</a>
+                <a href="abu-simbel.html">Abu Simbel</a>
+                <a href="nefertari.html">Abu Simbel - Nefertari</a>
+                <a href="3js.html">3JS v1 Amenemhat III</a>
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="sketchfab-embed-wrapper">
+    <iframe title="The Giza pyramid complex | EGYPT"
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            xr-spatial-tracking
+            execution-while-out-of-viewport
+            execution-while-not-rendered
+            web-share
+            src="https://sketchfab.com/models/710ce0d3291f4e0ca054482de637028c/embed?autostart=1&ui_theme=dark&dnt=1">
+    </iframe>
+</div>
+
+<div class="overlay" id="overlay">
+    <p>Left click to rotate, right click to pan</p>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const overlay = document.getElementById('overlay');
+        setTimeout(() => {
+            overlay.style.opacity = 0;
+            setTimeout(() => {
+                overlay.style.display = 'none'; 
+            }, 500); 
+        }, 3000); 
+    });
+</script>
+
+</body>
+</html>
